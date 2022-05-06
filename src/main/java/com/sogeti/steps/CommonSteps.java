@@ -1,12 +1,9 @@
 package com.sogeti.steps;
 
 
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade;
-import org.openqa.selenium.WebElement;
 
 
 /**

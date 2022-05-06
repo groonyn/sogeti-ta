@@ -1,13 +1,11 @@
 package com.sogeti.cucumber.stepdefinitions;
 
 import com.sogeti.steps.AutomationPageSteps;
-import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * Provides Step Definitions class for Cucumber BDD approach.

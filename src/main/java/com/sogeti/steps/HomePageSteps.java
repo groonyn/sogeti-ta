@@ -7,8 +7,6 @@ import com.sogeti.pages.components.NavBarGlobal;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 
-import static org.hamcrest.Matchers.is;
-
 /**
  * Provides class in Step Design manner with steps logic for Scenarios.
  *

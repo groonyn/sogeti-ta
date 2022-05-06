@@ -1,10 +1,7 @@
 package com.sogeti.cucumber.stepdefinitions;
 
 import com.sogeti.steps.CommonSteps;
-import com.sogeti.steps.HomePageSteps;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
 /**
