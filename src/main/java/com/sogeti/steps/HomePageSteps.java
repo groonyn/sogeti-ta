@@ -27,7 +27,11 @@ public class HomePageSteps extends ScenarioSteps {
 
     @Step
     public void acceptCookie(boolean ifVisible) {
-        if (ifVisible) basePage.acceptCookieButton.waitUntilClickable().click();
+        if (ifVisible && basePage.acceptCookieButton.isVisible()) {
+            basePage.acceptCookieButton.waitUntilClickable().click();
+        } else {
+            basePage.acceptCookieButton.waitUntilClickable().click();
+        }
     }
 
     @Step

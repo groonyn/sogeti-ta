@@ -27,6 +27,6 @@ public class BasePage extends PageObject {
         return elementsList.stream()
                 .filter(elementFacade -> elementFacade.waitUntilPresent().getText().equals(elementName))
                 .findFirst().orElseThrow(() ->
-                        new NotFoundException("Element with name + " + elementName + "is not found in the list"));
+                        new NotFoundException("Element with name + " + elementName + "is not found in the list."));
     }
 }

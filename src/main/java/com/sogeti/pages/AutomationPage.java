@@ -1,9 +1,13 @@
 package com.sogeti.pages;
 
+import net.serenitybdd.core.Serenity;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.actions.Scroll;
+import net.serenitybdd.screenplay.actions.ScrollTo;
 import net.serenitybdd.screenplay.actions.ScrollToWebElement;
+import net.serenitybdd.screenplay.waits.WaitUntil;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
@@ -20,7 +24,9 @@ public class AutomationPage extends BasePage {
 
     @FindBy(css = "h2")
     public List<WebElementFacade> sectionsTitles;
+
     public void scrollDownOnTopToSection(String sectionName) {
+        WebElementFacade elementFacade = getElementByNameFromList(sectionsTitles, sectionName);
         Scroll.to(getElementByNameFromList(sectionsTitles, sectionName)).andAlignToTop();
     }
 }
