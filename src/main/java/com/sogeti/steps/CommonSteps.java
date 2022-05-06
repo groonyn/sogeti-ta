@@ -15,7 +15,6 @@ import org.openqa.selenium.WebElement;
  * @author <a href="mailto:groonyn@gmail.com">Nikolai Grunin</a>
  */
 public class CommonSteps extends ScenarioSteps {
-
     @Step
     public void verifyCurrentPage(String urlName) {
         Ensure.thatTheCurrentPage().currentUrl().contains(urlName);

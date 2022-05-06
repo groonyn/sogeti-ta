@@ -1,15 +1,12 @@
 package com.sogeti.steps;
 
 
-import com.sogeti.pages.HomePage;
-import net.serenitybdd.core.Serenity;
-import net.serenitybdd.core.annotations.findby.By;
-import net.serenitybdd.screenplay.ensure.Ensure;
+import com.sogeti.pages.BasePage;
+import com.sogeti.pages.components.MainMenuNavBar;
+import com.sogeti.pages.components.NavBarGlobal;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.junit.Assert;
 
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 
 /**
@@ -18,17 +15,35 @@ import static org.hamcrest.Matchers.is;
  * @author <a href="mailto:groonyn@gmail.com">Nikolai Grunin</a>
  */
 public class HomePageSteps extends ScenarioSteps {
-    HomePage homePage;
+    BasePage basePage;
+    MainMenuNavBar mainMenuNavBar;
+    NavBarGlobal navBarGlobal;
 
     /**
      * Open entry point page for execution of tests.
      */
     @Step
     public void openHomePage() {
-        homePage.open();
+        basePage.open();
     }
+
     @Step
     public void acceptCookie(boolean ifVisible) {
-        if (ifVisible) homePage.acceptCookieButton.waitUntilClickable().click();
+        if (ifVisible) basePage.acceptCookieButton.waitUntilClickable().click();
+    }
+
+    @Step
+    public void hoverOverTheMenuItem(String menuName) {
+        mainMenuNavBar.mouseHoverOnMenuItem(menuName);
+    }
+
+    @Step
+    public void clickOnTabLink(String urlName) {
+        mainMenuNavBar.clickItemByCss(urlName, MainMenuNavBar.getSubMenuLinksCss());
+    }
+
+    @Step
+    public void clickGlobalNavElement(String buttonName) {
+        navBarGlobal.clickItemByCss(buttonName, NavBarGlobal.getNavBarGlobalDropdownButtonCss());
     }
 }

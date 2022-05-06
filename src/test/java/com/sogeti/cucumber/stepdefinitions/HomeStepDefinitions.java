@@ -1,5 +1,6 @@
 package com.sogeti.cucumber.stepdefinitions;
 
+import com.sogeti.steps.CommonSteps;
 import com.sogeti.steps.HomePageSteps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -19,19 +20,21 @@ public class HomeStepDefinitions {
     public void givenUserOnTheHomePage() {
         homePageSteps.openHomePage();
     }
-
     @When("accept cookie if visible")
     public void acceptCookieIfVisible() {
         homePageSteps.acceptCookie(true);
     }
 
-
-//    @Then("verify page with {string} header is displayed")
-//    public void verifyPageWithHeaderIsDisplayed(String headerName) {
-//        homePageSteps.verifyPageHeader(headerName);
-//    }
-//
-//    @When("click on {string} if temperature is below {int} or {string} if temperature is above {int} degrees")
-//    public void clickOnBuyButtonDependingOnTemperature(String buttonByTempBelow) {
-//    }
+    @When("hover over the {string} sub menu link")
+    public void whenMoveHoverTheLink(String linkName) {
+        homePageSteps.hoverOverTheMenuItem(linkName);
+    }
+    @When("click on {string} tab link")
+    public void whenClickOnTabLink(String urlName) {
+        homePageSteps.clickOnTabLink(urlName);
+    }
+    @When("click on {string} global item")
+    public void whenClickOnGlobalNavElement(String name) {
+        homePageSteps.clickGlobalNavElement(name);
+    }
 }

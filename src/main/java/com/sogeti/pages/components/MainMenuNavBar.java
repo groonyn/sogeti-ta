@@ -1,35 +1,23 @@
 package com.sogeti.pages.components;
 
-import com.sogeti.Utils;
-import com.sogeti.pages.AutomationPage;
-import com.sogeti.pages.HomePage;
-import com.sogeti.steps.CommonSteps;
+import com.sogeti.pages.BasePage;
+import lombok.Getter;
 import net.serenitybdd.core.pages.WebElementFacade;
-import net.serenitybdd.core.pages.WebElementState;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
 
-public class MainMenuNavBar extends HomePage {
+public class MainMenuNavBar extends BasePage {
     @FindBy(css = "#main-menu  li.has-children span")
     private List<WebElementFacade> mainMenuItems;
 
-    private String subMenuLinksCss = "#main-menu a.subMenuLink";
+    @Getter
+    private static final String subMenuLinksCss = "div.mega-navbar a.subMenuLink";
 
-    public MainMenuNavBar mouseHoverOnMenuItem(String menuItem) {
-        mainMenuItems.stream().filter(mainMenuItem -> mainMenuItem.waitUntilPresent().getText().equals(menuItem))
-                .findFirst().ifPresent(mainMenuItem -> new Actions(getDriver()).moveToElement(mainMenuItem).perform());
-        return this;
-    }
-
-    public void clickSubMenuLink(String subItem) {
-        List<WebElementFacade> subMenuLinks = $$(subMenuLinksCss);
-        subMenuLinks.stream().filter(WebElementState::isPresent)
-                .filter(webElementFacade -> webElementFacade.waitUntilPresent().getAttribute("href")
-                        .contains(subItem)).findFirst().ifPresent(webElementFacade -> new Utils()
-                        .clickJsOnElement(webElementFacade));
+    public void mouseHoverOnMenuItem(String menuItem) {
+        new Actions(getDriver()).moveToElement(getElementByNameFromList(mainMenuItems, menuItem)).perform();
     }
 }
+
