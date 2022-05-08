@@ -1,4 +1,4 @@
-package com.sogeti;
+package com.sogeti.cucumber.stepdefinitions.ui;
 
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
