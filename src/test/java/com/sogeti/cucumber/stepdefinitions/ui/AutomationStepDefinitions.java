@@ -1,6 +1,6 @@
-package com.sogeti.cucumber.stepdefinitions;
+package com.sogeti.cucumber.stepdefinitions.ui;
 
-import com.sogeti.steps.AutomationPageSteps;
+import com.sogeti.ui.steps.AutomationPageSteps;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

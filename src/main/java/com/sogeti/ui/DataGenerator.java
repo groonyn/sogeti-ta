@@ -1,4 +1,4 @@
-package com.sogeti;
+package com.sogeti.ui;
 
 import org.apache.commons.lang3.RandomStringUtils;
 

@@ -1,7 +1,7 @@
-package com.sogeti.steps;
+package com.sogeti.ui.steps;
 
 
-import com.sogeti.pages.BasePage;
+import com.sogeti.ui.pages.BasePage;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;

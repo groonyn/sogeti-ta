@@ -1,4 +1,4 @@
-package com.sogeti.pages;
+package com.sogeti.ui.pages;
 
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.support.FindBy;

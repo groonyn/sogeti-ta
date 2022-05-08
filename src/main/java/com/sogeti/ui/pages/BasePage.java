@@ -1,4 +1,4 @@
-package com.sogeti.pages;
+package com.sogeti.ui.pages;
 
 import com.paulhammant.ngwebdriver.ByAngular;
 import net.serenitybdd.core.pages.PageObject;

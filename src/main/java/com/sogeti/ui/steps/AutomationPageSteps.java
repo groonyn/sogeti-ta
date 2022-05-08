@@ -1,9 +1,9 @@
-package com.sogeti.steps;
+package com.sogeti.ui.steps;
 
 
-import com.sogeti.DataGenerator;
-import com.sogeti.pages.AutomationPage;
-import com.sogeti.pages.components.forms.ContactUsForm;
+import com.sogeti.ui.DataGenerator;
+import com.sogeti.ui.pages.AutomationPage;
+import com.sogeti.ui.pages.components.forms.ContactUsForm;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import org.hamcrest.Matchers;

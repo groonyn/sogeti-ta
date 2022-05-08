@@ -1,6 +1,6 @@
-package com.sogeti.cucumber.stepdefinitions;
+package com.sogeti.cucumber.stepdefinitions.ui;
 
-import com.sogeti.steps.HomePageSteps;
+import com.sogeti.ui.steps.HomePageSteps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

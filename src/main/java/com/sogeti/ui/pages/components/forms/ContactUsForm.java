@@ -1,6 +1,6 @@
-package com.sogeti.pages.components.forms;
+package com.sogeti.ui.pages.components.forms;
 
-import com.sogeti.pages.AutomationPage;
+import com.sogeti.ui.pages.AutomationPage;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;

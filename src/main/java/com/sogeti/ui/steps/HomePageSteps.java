@@ -1,10 +1,10 @@
-package com.sogeti.steps;
+package com.sogeti.ui.steps;
 
 
-import com.sogeti.pages.BasePage;
-import com.sogeti.pages.HomePage;
-import com.sogeti.pages.components.bars.MainMenuNavBar;
-import com.sogeti.pages.components.bars.NavBarGlobal;
+import com.sogeti.ui.pages.BasePage;
+import com.sogeti.ui.pages.HomePage;
+import com.sogeti.ui.pages.components.bars.MainMenuNavBar;
+import com.sogeti.ui.pages.components.bars.NavBarGlobal;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;

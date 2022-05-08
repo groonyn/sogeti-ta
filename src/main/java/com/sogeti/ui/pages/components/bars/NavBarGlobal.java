@@ -1,6 +1,6 @@
-package com.sogeti.pages.components.bars;
+package com.sogeti.ui.pages.components.bars;
 
-import com.sogeti.pages.HomePage;
+import com.sogeti.ui.pages.HomePage;
 import lombok.Getter;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.core.pages.WebElementFacade;
