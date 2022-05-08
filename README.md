@@ -1,20 +1,19 @@
 # UI Automation Task
 
-This is fully configurable UI automation framework based on BDD testing concept using Serenity, Cucumber, Java technologies.
+This is fully configurable UI and API automation framework based on BDD testing concept using Serenity, Cucumber, Java technologies.
 Configurable for parallel and cross-browser automation if needed.
 
-Projects was designed using Page Object pattern in mixture with Step Design Pattern.x
+Projects was designed using Page Object pattern in mixture with Step Design Pattern for UI part.
 
 ## Dependencies
 
-1. Java 1.8
-2. Maven
+1. Java 11
+2. Maven 3
 3. Selenium
-4. Serenity 2
-5. Serenity Single Page Report 2.
-6. Cucumber 5
-7. JUnit 4
-8. Hamcrest 1.3
+4. Serenity 3
+5. Cucumber 7
+6. Unit 4
+6. Hamcrest 1.3
 
 See the `pom.xml` for details.
 ## HOW TO
@@ -45,7 +44,7 @@ serenity:aggregate
 or just run your tests in maven by:
 
 ```
-clean vefify
+clean verify
 ```
 from the command line or from your IDE.
 
