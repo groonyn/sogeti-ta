@@ -1,4 +1,4 @@
-# UI Automation Task
+# Automation Task
 
 This is fully configurable UI and API automation framework based on BDD testing concept using Serenity, Cucumber, Java technologies.
 Configurable for parallel and cross-browser automation if needed.
