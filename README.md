@@ -14,6 +14,7 @@ Projects was designed using Page Object pattern in mixture with Step Design Patt
 5. Cucumber 7
 6. Unit 4
 6. Hamcrest 1.3
+7. Rest Assured 2
 
 See the `pom.xml` for details.
 ## HOW TO
