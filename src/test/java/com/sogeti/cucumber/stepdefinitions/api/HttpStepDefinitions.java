@@ -57,6 +57,6 @@ public class HttpStepDefinitions {
     private void restAssuredChecks() {
         restAssuredThat(response -> response.statusCode(200));
         restAssuredThat(response -> response.contentType(ContentType.JSON));
-        restAssuredThat(response -> response.time(Matchers.lessThan(3L), TimeUnit.SECONDS));
+        restAssuredThat(response -> response.time(Matchers.lessThan(1L), TimeUnit.SECONDS));
     }
 }
