@@ -1,17 +1,12 @@
 package com.sogeti.cucumber.stepdefinitions.api;
 
-import io.cucumber.java.Before;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.config.RestAssuredConfig;
-import io.restassured.filter.log.LogDetail;
-import io.restassured.http.ContentType;
-import io.restassured.specification.RequestSpecification;
-import net.serenitybdd.core.annotations.events.BeforeScenario;
-import net.serenitybdd.junit.runners.TestConfiguration;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
-import org.junit.Rule;
 
+/**
+ * Defines methods to work with api.
+ * @author <a href="mailto:groonyn@gmail.com">Nikolai Grunin</a>
+ */
 public class API {
     private static final String COUNTRY_AND_POSTCODE = "/{country}/{postcode}";
     private static final String DEFAULT_URL = "http://api.zippopotam.us";

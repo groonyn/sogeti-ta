@@ -1,7 +1,6 @@
 package com.sogeti.cucumber.stepdefinitions.api;
 
 import com.sogeti.cucumber.stepdefinitions.api.response.CountryResponse;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
@@ -13,6 +12,11 @@ import java.util.concurrent.TimeUnit;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.Matchers.equalTo;
 
+/**
+ * Provides Http Step Definitions class for Cucumber BDD approach.
+ *
+ * @author <a href="mailto:groonyn@gmail.com">Nikolai Grunin</a>
+ */
 public class HttpStepDefinitions {
 
     @Steps
