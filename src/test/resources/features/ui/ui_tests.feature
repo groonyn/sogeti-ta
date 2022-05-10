@@ -1,4 +1,4 @@
-@UI_Tests
+@UI
 Feature: Test Case 1 functionality
 
   Scenario: Test Case 1
