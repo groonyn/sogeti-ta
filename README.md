@@ -3,7 +3,7 @@
 This is fully configurable UI and API automation framework based on BDD testing concept using Serenity, Cucumber, Java technologies.
 Configurable for parallel and cross-browser automation if needed.
 
-Projects was designed using Page Object pattern in mixture with Step Design Pattern for UI part.
+Projects was designed using Page Object pattern in mixture with Step Design Pattern.
 
 ## Dependencies
 
