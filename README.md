@@ -22,12 +22,16 @@ See the `pom.xml` for details.
 To run project for sequential test run:
 - maven console
 ```
-clean verify
+clean verify "-Dcucumber.filter.tags=@{tagname} or @{tagname}" -U
+```
+- for running specific stories by tags with {tagname} just add parameter
+```
+"-Dcucumber.filter.tags=@{tagname} or @{tagname}"
 ```
 For parallel run of stories:
-- maven console
+- add parameter in maven console
 ```
-clean verify -Dparallel=methods
+-Dparallel=methods
 ```
 NOTE: Basically it has current preset to 4 instances.
 
