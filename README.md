@@ -11,8 +11,8 @@ Projects was designed using Page Object pattern in mixture with Step Design Patt
 2. Maven 3
 3. Selenium
 4. Serenity 2
-5. Cucumber 7
-6. Unit 4
+5. Cucumber 6
+6. JUnit 4
 6. Hamcrest 1.3
 7. Rest Assured 2
 
