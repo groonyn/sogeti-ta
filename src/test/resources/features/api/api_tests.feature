@@ -15,4 +15,3 @@ Feature: API Tests
       | United States | 90210     | Beverly Hills | US                   |
       | United States | 12345     | Schenectady   | US                   |
       | Canada        | B2R       | Waverley      | CA                   |
-
